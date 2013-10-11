@@ -1,0 +1,22 @@
+<header class="header bg-light lter bg-gradient b-b">
+  <button class="btn btn-success btn-sm pull-right btn-icon" id="new-task"><i class="icon-plus"></i></button>
+  <p>Tareas</p>
+</header>
+<section class="bg-light lter w-f">
+  <section class="hbox stretch">
+    <!-- .aside -->
+    <aside>
+      <section class="vbox">
+        <section class="scrollable wrapper">
+          <!-- task list -->
+          <ul id="task-list" class="list-group list-group-sp js-container"></ul>
+          <!-- task list -->
+        </section>
+      </section>
+    </aside>
+    <!-- /.aside -->
+  </section>
+</section>
+<footer class="footer bg-white-only b-t">
+  <p class="checkbox"><label><input id="toggle-all" type="checkbox"> Marcar todas como completadas</label></p>
+</footer>

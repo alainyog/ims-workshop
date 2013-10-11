@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>inMediaStudio Workshop</title>
+  <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/font.css" type="text/css" cache="false" />
+  <link rel="stylesheet" href="assets/css/plugin.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+</head>
+<body>
+  <section class="hbox stretch">
+    <!-- .aside -->
+    <aside class="bg-primary aside-sm nav-vertical" id="nav">
+      <section class="vbox">
+        <header class="dker nav-bar nav-bar-fixed-top">
+          <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
+            <i class="icon-reorder"></i>
+          </a>
+          <a href="#" class="nav-brand" data-toggle="fullscreen">iMS</a>
+          <a class="btn btn-link visible-xs" data-toggle="class:show" data-target=".nav-user">
+            <i class="icon-comment-alt"></i>
+          </a>
+        </header>
+        <section>
+          <!-- user -->
+          <div class="bg-success nav-user hidden-xs pos-rlt">
+            <div class="nav-avatar pos-rlt">
+              <a href="#" class="thumb-sm avatar animated rollIn" data-toggle="dropdown">
+                <img src="assets/images/avatar.png" alt="" class="">
+                <span class="caret caret-white"></span>
+              </a>
+            </div>
+          </div>
+          <!-- / user -->
+          <!-- nav -->
+            <nav class="nav-primary hidden-xs">
+              <ul class="nav">
+                <li class="active" id="nav-notas">
+                  <a href="#">
+                    <i class="icon-pencil"></i>
+                    <span>Notas</span>
+                  </a>
+                </li>
+                <li id="nav-tareas">
+                  <a href="#">
+                    <i class="icon-file-text"></i>
+                    <span>Tareas</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          <!-- / nav -->
+        </section>
+      </section>
+    </aside>
+    <!-- /.aside -->
+    <!-- .vbox -->
+    <section id="content"></section>
+    <!-- /.vbox -->
+  </section>
+  <script data-main="js/config" src="bower_components/requirejs/require.js"></script>
+  <!-- Template assets -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+</body>
+</html>

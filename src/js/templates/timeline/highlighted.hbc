@@ -1,0 +1,15 @@
+<div class="panel bg-success lter no-borders">
+  <div class="panel-body">
+    <span class="timeline-icon"><i class="icon-bell-alt time-icon bg-success"></i></span>
+    <span class="timeline-date">7:30 am</span>
+    <h5>
+      <span>Wake up</span>
+      Me
+    </h5>
+    <div class="m-t-sm timeline-action">
+      <span class="h3 pull-left m-r-sm">4:51</span>
+      <button class="btn btn-sm btn-white"><i class="icon-pause"></i> Pause</button>
+      <button class="btn btn-sm btn-white"><i class="icon-ok"></i> Confirm</button>
+    </div>
+  </div>
+</div>

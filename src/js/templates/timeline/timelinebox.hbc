@@ -1,0 +1,14 @@
+<div class="timeline-caption">
+  <div class="panel">
+    <div class="panel-body">
+      <span class="arrow left"></span>
+      <span class="timeline-icon"><i class="icon-plane time-icon bg-dark"></i></span>
+      <span class="timeline-date">8:00 am</span>
+      <h5>
+        <span>Fly to</span>
+        Newyork City
+      </h5>
+      <p>82°, Very hot with some sun</p>
+    </div>
+  </div>
+</div>

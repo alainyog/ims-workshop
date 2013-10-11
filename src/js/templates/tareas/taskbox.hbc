@@ -1,0 +1,8 @@
+<div class="view">
+  <button class="destroy close hover-action">×</button>
+  <div class="checkbox">
+    <input class="toggle" type="checkbox" {{#if done}} checked {{/if}}>
+    <span class="task-name">{{title}}</span>
+    <input class="edit form-control" type="text" value="{{title}}">
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="view">
+  <button class="destroy close hover-action">×</button>
+  <div class="note-name">
+    <strong>
+      {{title}}
+    </strong>
+  </div>
+  <div class="note-desc">
+    {{text}}
+  </div>
+  <span class="text-xs text-muted">{{dateStr}}</span>
+</div>
