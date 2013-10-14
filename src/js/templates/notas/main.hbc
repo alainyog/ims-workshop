@@ -1,0 +1,17 @@
+<header class="header bg-light lter bg-gradient b-b">
+  <button class="btn btn-success pull-right btn-sm" id="new-note"><i class="icon-plus"></i> NUEVA</button>
+  <p>Notas</p>
+</header>
+<section class="bg-light lter">
+  <section class="hbox stretch">
+    <!-- .aside -->
+    <aside>
+      <section class="vbox b-b">
+        <section class="paper" id="note-detail">
+        <textarea type="text" class="form-control scrollable" placeholder="Escribe aquí tu nota">{{text}}</textarea>
+          </section>
+      </section>
+    </aside>
+    <!-- /.aside -->
+  </section>
+</section>

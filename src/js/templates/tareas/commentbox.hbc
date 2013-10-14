@@ -1,0 +1,10 @@
+<div class="view">
+  <button class="destroy close hover-action">×</button>
+  <div>
+    <span>{{text}}</span>
+    <small class="text-muted block text-xs">
+      <i class="icon-time"></i>
+      {{date}}
+    </small>
+  </div>
+</div>

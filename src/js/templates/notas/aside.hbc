@@ -1,0 +1,14 @@
+<header class="header bg-light lter bg-gradient clearfix b-b">
+  <div class="input-group m-t-sm">
+    <span class="input-group-addon input-sm"><i class="icon-search"></i></span>
+    <input type="text" class="form-control input-sm" id="search-note" placeholder="buscar">
+  </div>
+</header>
+<section class="scrollable">
+  <div class="wrapper">
+    <!-- note list -->
+    <ul id="note-list" class="list-group js-container">
+    </ul>
+    <!-- note list -->
+  </div>
+</section>
