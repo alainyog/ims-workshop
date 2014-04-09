@@ -56,68 +56,6 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   return buffer;
   });
 
-this["JST"]["plan/box"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [4,'>= 1.0.0'];
-helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  
-
-
-  return "<div class=\"row\">\n  <div class=\"col-lg-6 col-sm-6\">\n    <section class=\"panel\">\n    <div class=\"panel-body\">\n      <div class=\"clearfix m-b\">\n        <small class=\"text-muted pull-right\">5m ago</small>\n        <a href=\"#\" class=\"thumb-sm pull-left m-r\">\n          <img src=\"images/avatar.jpg\" class=\"img-circle\">\n        </a>\n        <div class=\"clear\">\n          <a href=\"#\"><strong>Jonathan Omish</strong></a>\n          <small class=\"block text-muted\">San Francisco, USA</small>\n        </div>\n      </div>\n      <p>\n        There are a few easy ways to quickly get started with Bootstrap...\n      </p>\n      <small class=\"\">\n        <a href=\"#\"><i class=\"icon-comment-alt\"></i> Comments (25)</a>\n      </small>\n    </div>\n    <footer class=\"panel-footer pos-rlt\">\n    <span class=\"arrow top\"></span>\n    <form class=\"pull-out\">\n      <input type=\"text\" class=\"form-control no-border input-lg text-sm\" placeholder=\"Write a comment...\">\n    </form>\n    </footer>\n    </section>\n  </div>\n  <div class=\"col-lg-6 col-sm-6\">\n    <section class=\"panel\">\n    <div class=\"panel-body\">\n      <div class=\"clearfix m-b\">\n        <small class=\"text-muted pull-right\">1hr ago</small>\n        <a href=\"#\" class=\"thumb-sm pull-left m-r\">\n          <img src=\"images/avatar_default.jpg\" class=\"img-circle\">\n        </a>\n        <div class=\"clear\">\n          <a href=\"#\"><strong>Mike Mcalidek</strong></a>\n          <small class=\"block text-muted\">Newyork, USA</small>\n        </div>\n      </div>\n      <div class=\"pull-in bg-light clearfix m-b-n\">\n        <p class=\"m-t-sm m-b text-center animated bounceInDown\">\n          <i class=\"icon-map-marker text-danger icon-4x\" data-toggle=\"tooltip\" title=\"\" data-original-title=\"checked in at Newyork\"></i>\n        </p>\n      </div>\n    </div>\n    <footer class=\"panel-footer pos-rlt\">\n    <span class=\"arrow top\"></span>\n    <form class=\"pull-out\">\n      <input type=\"text\" class=\"form-control no-border input-lg text-sm\" placeholder=\"Write a comment...\">\n    </form>\n    </footer>\n    </section>\n  </div>\n</div>\n";
-  });
-
-this["JST"]["plan/column-box"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [4,'>= 1.0.0'];
-helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "", stack1, functionType="function", escapeExpression=this.escapeExpression, self=this;
-
-function program1(depth0,data) {
-  
-  var buffer = "", stack1;
-  buffer += "\n  <header class=\"panel-heading bg-";
-  if (stack1 = helpers.bgClass) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.bgClass; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + " lter\">\n    <span class=\"h4\">";
-  if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
-  else { stack1 = depth0.title; stack1 = typeof stack1 === functionType ? stack1.apply(depth0) : stack1; }
-  buffer += escapeExpression(stack1)
-    + "<br>\n  </header>\n  ";
-  return buffer;
-  }
-
-  buffer += "<section class=\"panel no-borders\">\n  ";
-  stack1 = helpers['with'].call(depth0, depth0.info, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n  <div class=\"panel-body\">\n  </div>\n</section>\n";
-  return buffer;
-  });
-
-this["JST"]["plan/columns"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [4,'>= 1.0.0'];
-helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  
-
-
-  return "<section class=\"scrollable wrapper\">\n  <div class=\"row\">\n    <div class=\"col-md-3\" id=\"icebox\"> </div>\n    <div class=\"col-md-3\" id=\"todo\"></div>\n    <div class=\"col-md-3\" id=\"done\"></div>\n    <div class=\"col-md-3\" id=\"debt\"\"></div>\n  </div>\n</section>\n";
-  });
-
-this["JST"]["plan/item-box"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
-  this.compilerInfo = [4,'>= 1.0.0'];
-helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "", stack1, self=this;
-
-function program1(depth0,data) {
-  
-  
-  return "\n<section class=\"panel bg-dark\">\n  <p></p>\n</section>\n";
-  }
-
-  stack1 = helpers['if'].call(depth0, depth0.dragged, {hash:{},inverse:self.noop,fn:self.program(1, program1, data),data:data});
-  if(stack1 || stack1 === 0) { buffer += stack1; }
-  buffer += "\n<section class=\"panel\">\n  <div class=\"panel-body\">\n    <div class=\"clearfix m-b\">\n      <small class=\"text-muted pull-right\">5m ago</small>\n      <a href=\"#\" class=\"thumb-sm pull-left m-r\">\n        <img src=\"assets/images/avatar.jpg\" class=\"img-circle\">\n      </a>\n      <div class=\"clear\">\n        <a href=\"#\"><strong>Jonathan Omish</strong></a>\n      </div>\n    </div>\n    <p>\n      There are a few easy ways\n    </p>\n    <small class=\"\">\n      <a href=\"#\"><i class=\"icon-comment-alt\"></i> Comments (25)</a>\n    </small>\n  </div>\n  <footer class=\"panel-footer pos-rlt\">\n  <span class=\"arrow top\"></span>\n    <form class=\"pull-out\">\n      <input type=\"text\" class=\"form-control no-border input-lg text-sm\" placeholder=\"Write a comment...\">\n    </form>\n  </footer>\n</section>\n";
-  return buffer;
-  });
-
 this["JST"]["tareas/aside"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};

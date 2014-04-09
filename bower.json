@@ -13,11 +13,9 @@
     "tests"
   ],
   "dependencies": {
-    "marionette": "~1.1.0",
     "requirejs": "~2.1.8",
-    "jquery": "~2.0.3"
-  },
-  "devDependencies": {
+    "jquery": "~2.0.3",
+    "backbone": "*",
     "almond": "~0.2.6",
     "handlebars": "~1.0.0"
   }

@@ -2,7 +2,6 @@ require.config({
   paths: {
     backbone: "../../bower_components/backbone/backbone",
     jquery: "../../bower_components/jquery/jquery",
-    marionette: "../../bower_components/marionette/lib/backbone.marionette",
     underscore: "../../bower_components/underscore/underscore",
     handlebars: "../../bower_components/handlebars/handlebars",
     "handlebars.runtime": "../../bower_components/handlebars/handlebars.runtime"
@@ -20,14 +19,6 @@ require.config({
         "underscore"
       ],
       exports: "Backbone"
-    },
-    marionette: {
-      deps: [
-        "jquery",
-        "underscore",
-        "backbone"
-      ],
-      exports: "Marionette"
     },
     handlebars: {
       exports: "Handlebars"

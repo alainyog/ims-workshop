@@ -6,7 +6,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // Metadata.
     pkg: grunt.file.readJSON("package.json"),
-    banner: "/* */",
     // Task configuration.
     jshint: {
       options: {
