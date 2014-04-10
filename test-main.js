@@ -15,6 +15,34 @@ Object.keys(window.__karma__.files).forEach(function(file) {
   }
 });
 
+/* Expect matchers */
+
+expect.Assertion.prototype.instanceOf = function(Klass) {
+  this.assert(
+    this.obj instanceof Klass,
+    function() { return ["expected", this.obj, "to be an instance of", Klass].join(" "); },
+    function() { return ["expected", this.obj, "not to be an instance of", Klass].join(" "); }
+  );
+};
+
+expect.Assertion.prototype.ownProperty = function(prop) {
+  this.assert(
+    this.obj.hasOwnProperty(prop),
+    function() { return "expected " + this.obj + " to have own property " + prop; },
+    function() { return "expected " + this.obj + " to not have own property " + prop; }
+  );
+};
+
+expect.Assertion.prototype.beenCalled = function() {
+  this.assert(
+    this.obj.called,
+    function() { return "expected " + this.obj + " to have been called"; },
+    function() { return "expected " + this.obj + " to not have been called"; }
+  );
+};
+
+/* RequireJS config */
+
 require.config({
   baseUrl: "/base/src/js",
   paths: {

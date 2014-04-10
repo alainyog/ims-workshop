@@ -78,14 +78,14 @@ module.exports = function(grunt) {
         }
       },
       jshint: {
-        files: ["src/js/{,*/}*.js"],
+        files: ["src/js/{,*/}*.js", "!src/js/.#.*"],
         tasks: ["jshint"],
         options: {
           spawn: false
         }
       },
       karma: {
-        files: ["src/js/**/*.js", "test/**/*.js"],
+        files: ["src/js/**/*.js", "test/**/*.js", "!src/js/.#.*"],
         tasks: ["karma:unit:run"]
       }
     },
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
     },
     karma: {
       unit: {
-        browsers: ["Chrome"],
+        browsers: [],
         singleRun: false,
         autoWatch: false,
         background: true
