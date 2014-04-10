@@ -16,8 +16,8 @@ define(
       className: "hbox stretch",
       initialize: function() {
         this.subviews = {
-          aside: new AsideView(),
-          main: new MainView()
+          aside: new AsideView({collection: this.collection}),
+          main: new MainView({collection: this.collection})
         };
       },
       render: function () {

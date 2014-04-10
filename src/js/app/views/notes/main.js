@@ -9,7 +9,13 @@ define(
     var MainView = Base.View.extend({
       template: JST["notes/main"],
       tagName: "section",
-      className: "vbox"
+      className: "vbox",
+      events: {
+        "click #new-note": "addNote"
+      },
+      addNote: function() {
+        this.collection.add({});
+      }
     });
 
     return MainView;

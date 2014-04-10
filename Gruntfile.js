@@ -136,7 +136,7 @@ module.exports = function(grunt) {
       .use(connect.logger("dev"))
       .use(connect.static(__dirname + dir))
       .use(connect.static(__dirname))
-      .listen(3000)
+      .listen(grunt.option("port") || 3000)
       .on("error", done.bind({}, false));
     grunt.log.writeln("Server listening in http://localhost:3000");
   });

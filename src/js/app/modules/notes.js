@@ -7,9 +7,9 @@ define(
   function(Base, views, models) {
     return function() {
       var notes = new models.NoteCollection();
-      var layout = new views.notes.Layout();
+      var layout = new views.notes.Layout({collection: notes});
 
-      void notes;
+      notes.fetch();
 
       return layout.render();
     };
