@@ -19,6 +19,7 @@ define(
         var data = this.serializeData(),
             html = this.template? this.template(data) : "";
         this.$el.empty().append(html);
+        return this;
       },
     });
 

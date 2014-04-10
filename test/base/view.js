@@ -97,6 +97,10 @@ define(["base", "backbone"], function(Base, Backbone) {
       expect(v.$el.html()).to.equal("a: 1, b: 2");
     });
 
+    it("should return this", function() {
+      expect(v.render()).to.equal(v);
+    });
+
   });
 
 });

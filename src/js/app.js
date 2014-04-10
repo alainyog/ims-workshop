@@ -1,6 +1,9 @@
-define(["backbone"], function(Backbone) {
+define(["app/modules"], function(modules) {
   "use strict";
 
-  return Backbone;
+  $(function() {
+    var notes = modules.notes();
+    notes.$el.appendTo("#content");
+  });
 
 });
