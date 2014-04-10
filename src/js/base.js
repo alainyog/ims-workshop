@@ -7,7 +7,7 @@ define(
    "base/class",
    "base/reqres",
    "base/vent"],
-  function(View, Class, Reqres) {
+  function(View, Class, Reqres, Vent) {
     return {
       View: View,
       Class: Class,
