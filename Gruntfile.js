@@ -83,6 +83,10 @@ module.exports = function(grunt) {
         options: {
           spawn: false
         }
+      },
+      karma: {
+        files: ["src/js/**/*.js", "test/**/*.js"],
+        tasks: ["karma:unit:run"]
       }
     },
     copy: {
@@ -91,6 +95,21 @@ module.exports = function(grunt) {
         cwd: "src",
         src: "assets/**",
         dest: "build/"
+      }
+    },
+    karma: {
+      unit: {
+        browsers: ["Chrome"],
+        singleRun: false,
+        autoWatch: false,
+        background: true
+      },
+      continuous: {
+        browsers: ["PhantomJS"],
+        singleRun: true
+      },
+      options: {
+        configFile: "karma.conf.js"
       }
     }
   });
@@ -104,6 +123,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-copy");
+  grunt.loadNpmTasks("grunt-karma");
 
   grunt.registerTask("default", ["jshint", "bower", "handlebars", "requirejs", "concat:plain", "clean", "copy"]);
   grunt.registerTask("build", ["jshint", "bower", "handlebars", "requirejs", "concat:ugly", "uglify", "clean", "copy"]);
