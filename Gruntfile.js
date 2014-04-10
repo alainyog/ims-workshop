@@ -112,12 +112,13 @@ module.exports = function(grunt) {
   grunt.registerTask("server", function(mode) {
     var connect = require("connect"),
         done = this.async(),
-        dir = (mode === "build") ? "/build" : "/src";
+        dir = (mode === "build") ? "/build" : "/src",
+        port = grunt.option("port") || 3000;
     connect()
       .use(connect.logger("dev"))
       .use(connect.static(__dirname + dir))
       .use(connect.static(__dirname))
-      .listen(3000)
+      .listen(port)
       .on("error", done.bind({}, false));
     grunt.log.writeln("Server listening in http://localhost:3000");
   });
