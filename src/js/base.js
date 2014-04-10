@@ -4,10 +4,12 @@
 
 define(
   ["base/view",
-   "base/class"],
-  function(View, Class) {
+   "base/class",
+   "base/reqres"],
+  function(View, Class, Reqres) {
     return {
       View: View,
-      Class: Class
+      Class: Class,
+      Reqres: Reqres
     };
   });
