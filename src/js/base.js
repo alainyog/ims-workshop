@@ -5,11 +5,13 @@
 define(
   ["base/view",
    "base/class",
-   "base/reqres"],
+   "base/reqres",
+   "base/vent"],
   function(View, Class, Reqres) {
     return {
       View: View,
       Class: Class,
-      Reqres: Reqres
+      Reqres: Reqres,
+      Vent: Vent
     };
   });
